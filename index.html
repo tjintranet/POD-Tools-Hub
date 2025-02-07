@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POD Tools Hub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .tool-card {
+            transition: transform 0.2s;
+        }
+        .tool-card:hover {
+            transform: translateY(-3px);
+        }
+        .card-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #0d6efd;
+        }
+        .tools-container {
+            max-width: 1600px;
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .card-title {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-text {
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+        }
+        .bg-primary {
+        background: linear-gradient(180deg, #0a58ca 0%, #0d6efd 100%) !important;
+        }
+        .bi-wrench {
+        transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container-fluid py-3 bg-primary text-white text-center">
+        <h1 class="h3 mb-0 fw-bold d-flex align-items-center justify-content-center">POD Tools Hub <i class="bi bi-wrench ms-2"></i></h1>
+    </div>
+    </div>
+
+    <div class="container tools-container py-3">
+        <div class="row g-3">
+            <!-- Item Template Creator -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-file-earmark-text card-icon"></i>
+                        <h5 class="card-title">Item Template Creator</h5>
+                        <p class="card-text">Create POD Item Templates</p>
+                        <a href="https://tjintranet.github.io/POD-Item-Template-Creator/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Processing -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-gear card-icon"></i>
+                        <h5 class="card-title">Order Processing Tool</h5>
+                        <p class="card-text">Process POD orders</p>
+                        <a href="https://tjintranet.github.io/POD-Order-Processing-Tool/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volume Set Manager -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-book card-icon"></i>
+                        <h5 class="card-title">Volume Set Manager</h5>
+                        <p class="card-text">Manage Volume Sets</p>
+                        <a href="https://tjintranet.github.io/Volume-Set-Manager/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ulverscroft Template -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-file-earmark-text card-icon"></i>
+                        <h5 class="card-title">Ulverscroft Item Templates</h5>
+                        <p class="card-text">Create Ulverscroft Item Templates</p>
+                        <a href="https://tjintranet.github.io/Ulverscroft-Item-Template-Creator/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POD Availability -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-check-circle card-icon"></i>
+                        <h5 class="card-title">POD Availability</h5>
+                        <p class="card-text">Check POD Availability</p>
+                        <a href="https://tjintranet.github.io/tj-pod-availabilty/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TF Metadata Editor -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-pencil-square card-icon"></i>
+                        <h5 class="card-title">TF Metadata Editor</h5>
+                        <p class="card-text">Edit T&F Metadata</p>
+                        <a href="https://tjintranet.github.io/TF-Metadata-Editor/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DHL Order CSV -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-truck card-icon"></i>
+                        <h5 class="card-title">DHL Order CSV</h5>
+                        <p class="card-text">Create DHL Orders CSV</p>
+                        <a href="https://tjintranet.github.io/Create-DHL-Order-CSV/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batch Size Validator -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-check2-all card-icon"></i>
+                        <h5 class="card-title">T&F Batch Validator</h5>
+                        <p class="card-text">Validate Batch Sizes</p>
+                        <a href="https://tjintranet.github.io/TF-POD-Batch-Size-Validator/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Press ASR POD Viewer -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-eye card-icon"></i>
+                        <h5 class="card-title">History Press Order Viewer</h5>
+                        <p class="card-text">View ASR POD Orders In</p>
+                        <a href="https://tjintranet.github.io/History-Press-ASR-POD-Viewer/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hachette Inbound Order -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-box-arrow-in-down card-icon"></i>
+                        <h5 class="card-title">Hachette Inbound</h5>
+                        <p class="card-text">Check Inbound Order</p>
+                        <a href="https://tjintranet.github.io/Hachette-Inbound-Order-Checker/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hachette Order Response -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-check-circle card-icon"></i>
+                        <h5 class="card-title">Hachette Response</h5>
+                        <p class="card-text">Check Order Response File</p>
+                        <a href="https://tjintranet.github.io/Hachette-Order-Response-Checker/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XML Parser -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-code-slash card-icon"></i>
+                        <h5 class="card-title">XML Parser</h5>
+                        <p class="card-text">Parse XML Files</p>
+                        <a href="https://tjintranet.github.io/xml-parser/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Book Weight Calculator -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-speedometer2 card-icon"></i>
+                        <h5 class="card-title">Book Weight Calculator</h5>
+                        <p class="card-text">Calculate Book Weights</p>
+                        <a href="https://tjintranet.github.io/POD-Book-Weight-Calculator/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
