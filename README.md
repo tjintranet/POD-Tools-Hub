@@ -1,34 +1,58 @@
 # POD Tools Hub
 
-A centralized landing page for POD (Print on Demand) processing tools. This hub provides quick access to various tools used in the POD workflow.
+A centralized dashboard for accessing POD (Print on Demand) related tools and utilities.
 
 ## Features
 
-- Responsive grid layout
-- Bootstrap 5 framework
-- Bootstrap Icons
-- Google Fonts (Roboto)
+- Responsive grid layout with tool cards
+- Dark/Light mode toggle with persistent preferences
+- Quick access to Switch and PACE systems
 - Hover animations on cards
 - Mobile-friendly design
 
-## Tools Included
+## Tools Available
 
-1. Item Template Creator
-2. Order Processing Tool
-3. Volume Set Manager
-4. Ulverscroft Template Creator
-5. POD Availability Checker
-6. TF Metadata Editor
-7. Book Weight Calculator
-8. DHL Order CSV Creator
-9. Batch Size Validator
-10. History Press ASR POD Viewer
-11. Hachette Order Response Checker
-12. Hachette Inbound Order Checker
-13. XML Parser
+The hub provides access to various POD tools including:
+- Item Template Creator
+- Order Processing Tool
+- Volume Set Manager
+- Ulverscroft Item Templates
+- POD Availability Checker
+- TF Metadata Editor
+- DHL Order CSV Creator
+- Batch Size Validator
+- History Press Order Viewer
+- Hachette Tools
+- XML Parser
+- Product Spec Validator
+- Book Weight Calculator
 
-## Dependencies
+## Technical Details
 
+### Dependencies
 - Bootstrap 5.3.2
 - Bootstrap Icons 1.11.3
 - Google Fonts (Roboto)
+
+### Local Storage
+- Theme preference is saved using localStorage
+- Key: 'theme'
+- Values: 'light' or 'dark'
+
+### Browser Support
+- Modern browsers supporting ES6
+- Flexbox and CSS Grid
+- CSS Custom Properties
+
+## Installation
+
+1. Clone the repository
+2. Open index.html in a web browser
+3. No build process required
+
+## Development
+
+To add new tools:
+1. Copy an existing card template from index.html
+2. Update icon, title, description, and link
+3. Place within the grid container
