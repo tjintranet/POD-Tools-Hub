@@ -55,9 +55,17 @@
     </style>
 </head>
 <body class="bg-light">
-    <div class="container-fluid py-3 bg-primary text-white text-center">
-        <h1 class="h3 mb-0 fw-bold d-flex align-items-center justify-content-center">POD Tools Hub <i class="bi bi-wrench ms-2"></i></h1>
-    </div>
+    <div class="container-fluid py-3 bg-primary text-white">
+        <div class="row align-items-center">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <h1 class="h3 mb-0 fw-bold d-flex align-items-center justify-content-center">POD Tools Hub <i class="bi bi-wrench ms-2"></i></h1>
+            </div>
+            <div class="col-2 text-end">
+                <a href="http://192.168.10.233:51089/#/app/submitpoints" class="btn btn-light me-2" target="_blank">Switch <i class="bi bi-caret-right-square"></i></a>
+                <a href="http://192.168.10.251/epace/login.html" class="btn btn-warning" target="_blank">PACE <i class="bi bi-caret-right-square"></i></a>
+            </div>
+        </div>
     </div>
 
     <div class="container tools-container py-3">
@@ -115,7 +123,7 @@
                 <div class="card tool-card">
                     <div class="card-body text-center">
                         <i class="bi bi-check-circle card-icon"></i>
-                        <h5 class="card-title">POD Availability</h5>
+                        <h5 class="card-title">POD File Availability</h5>
                         <p class="card-text">Check POD Availability</p>
                         <a href="https://tjintranet.github.io/tj-pod-availabilty/" class="btn btn-primary btn-sm">Open</a>
                     </div>
@@ -202,6 +210,18 @@
                         <h5 class="card-title">XML Parser</h5>
                         <p class="card-text">Parse XML Files</p>
                         <a href="https://tjintranet.github.io/xml-parser/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TF POD Product Spec-Validator -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-check2-all card-icon"></i>
+                        <h5 class="card-title">T&F Product Spec Validation</h5>
+                        <p class="card-text">Upload Metadata to Validate Specification</p>
+                        <a href="https://tjintranet.github.io/TF-POD-Product-Spec-Validator/" class="btn btn-primary btn-sm">Open</a>
                     </div>
                 </div>
             </div>
