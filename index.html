@@ -81,6 +81,15 @@
         .theme-toggle:hover {
             background: rgba(255,255,255,0.3);
         }
+        
+        /* Badge style */
+        .dev-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -163,6 +172,10 @@
             <!-- Volume Set Search -->
             <div class="col-md-4 col-lg-3">
                 <div class="card tool-card">
+                    <!-- Remove span when app complete -->
+                    <span class="dev-badge badge bg-warning text-dark">
+                        <i class="bi bi-tools me-1"></i>In Development</span>
+
                     <div class="card-body text-center">
                         <i class="bi bi-check-circle card-icon"></i>
                         <h5 class="card-title">Volume Set Search</h5>
