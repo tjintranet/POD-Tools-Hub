@@ -26,6 +26,9 @@ The hub provides access to various POD tools including:
 - XML Parser
 - Product Spec Validator
 - Book Weight Calculator
+- Spine Size Calculator
+- PACE Metadata to XML for DBS
+- Cased POD Order Filter
 
 ## Technical Details
 
