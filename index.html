@@ -23,14 +23,23 @@
             min-height: 100vh;
         }
         .tool-card {
-            transition: transform 0.2s;
-            background-color: #ffffff;
-        }
-        .dark-mode .tool-card {
-            background-color: #333333;
-            color: #ffffff;
-            border-color: #404040;
-        }
+  transition: transform 0.3s ease,box-shadow 0.3s ease;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1)
+}
+.dark-mode .tool-card {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #404040;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3)
+}
+.tool-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15)
+}
+.dark-mode .tool-card:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.5)
+}
         .tool-card:hover {
             transform: translateY(-3px);
         }
@@ -203,31 +212,7 @@
                         <a href="https://tjintranet.github.io/TF-Metadata-Editor/" class="btn btn-primary btn-sm">Open</a>
                     </div>
                 </div>
-            </div>
-
-            <!-- Hachette Order File Splitter/ -->
-            <div class="col-md-4 col-lg-3">
-                <div class="card tool-card">
-                    <div class="card-body text-center">
-                        <i class="bi bi-scissors card-icon"></i>
-                        <h5 class="card-title">Split Hachette Order Files</h5>
-                        <p class="card-text">Split Large Order Files</p>
-                        <a href="https://tjintranet.github.io/Hachette-Order-File-Splitter/" class="btn btn-primary btn-sm">Open</a>
-                    </div>
-                </div>
-            </div>            
-
-            <!-- DHL Order CSV 
-            <div class="col-md-4 col-lg-3">
-                <div class="card tool-card">
-                    <div class="card-body text-center">
-                        <i class="bi bi-truck card-icon"></i>
-                        <h5 class="card-title">DHL Order CSV</h5>
-                        <p class="card-text">Create DHL Orders CSV</p>
-                        <a href="https://tjintranet.github.io/Create-DHL-Order-CSV/" class="btn btn-primary btn-sm">Open</a>
-                    </div>
-                </div>
-            </div> -->
+            </div>          
        
             <!-- Batch Size Validator -->
             <div class="col-md-4 col-lg-3">
@@ -253,18 +238,6 @@
                 </div>
             </div>
             
-        <!-- Cased POD Order Filter
-        <div class="col-md-4 col-lg-3">
-            <div class="card tool-card"> 
-                <div class="card-body text-center">
-                    <i class="bi bi-filter-circle card-icon"></i>
-                    <h5 class="card-title">Cased POD Order Filter</h5>
-                    <p class="card-text">Filter by Spine Size</p>
-                    <a href="https://tjintranet.github.io/Cased-POD-Filter/" class="btn btn-primary btn-sm">Open</a>
-                </div>
-            </div>
-        </div>  -->           
-
             <!-- History Press ASR POD Viewer -->
             <div class="col-md-4 col-lg-3">
                 <div class="card tool-card">
@@ -301,18 +274,6 @@
                 </div>
             </div>
 
-            <!-- Spine Size Calculator
-            <div class="col-md-4 col-lg-3">
-                <div class="card tool-card">
-                    <div class="card-body text-center">
-                        <i class="bi bi-calculator-fill card-icon"></i>
-                        <h5 class="card-title">Spine Size Calculator</h5>
-                        <p class="card-text">Calculate Spine Sizes</p>
-                        <a href="https://tjintranet.github.io/Spine-Calculator/" class="btn btn-primary btn-sm">Open</a>
-                    </div>
-                </div>
-            </div>  -->
-
     <!-- Create Hachette PBS file -->
     <div class="col-md-4 col-lg-3">
         <div class="card tool-card">
@@ -337,30 +298,41 @@
         </div>
     </div>
 
-    <!-- XML Parser -->
-        <div class="col-md-4 col-lg-3">
-            <div class="card tool-card">
-                <div class="card-body text-center">
-                    <i class="bi bi-code-slash card-icon"></i>
-                    <h5 class="card-title">XML Parser</h5>
-                    <p class="card-text">Read XML Files</p>
-                    <a href="https://tjintranet.github.io/XML-Parser/" class="btn btn-primary btn-sm">Open</a>
+             <!-- Hachette Order File Splitter/ -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card tool-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-scissors card-icon"></i>
+                        <h5 class="card-title">Split Hachette Order Files</h5>
+                        <p class="card-text">Split Large Order Files</p>
+                        <a href="https://tjintranet.github.io/Hachette-Order-File-Splitter/" class="btn btn-primary btn-sm">Open</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-                
+            </div>     
 
                 <!-- Clays POD Orders -->
                 <div class="col-md-4 col-lg-3">
                     <div class="card tool-card"> 
                         <div class="card-body text-center">
                             <i class="bi bi-cart-check card-icon"></i>
-                            <h5 class="card-title">Clays POD Orders</h5>
+                            <h5 class="card-title">Clays Daily POD Orders</h5>
                             <p class="card-text">Create POD Order Files</p>
                             <a href="https://tjintranet.github.io/CLAYS-POD-Order-Processing-Tool/" class="btn btn-primary btn-sm">Open</a>
                         </div>
                     </div>
                 </div> 
+
+                  <!-- Clays ASR Orders -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card tool-card"> 
+                        <div class="card-body text-center">
+                            <i class="bi bi-cart-check card-icon"></i>
+                            <h5 class="card-title">Clays Daily ASR Orders</h5>
+                            <p class="card-text">Create ASR Order Files</p>
+                            <a href="https://tjintranet.github.io/Clays-ASR-Daily-Order-Processor/" class="btn btn-primary btn-sm">Open</a>
+                        </div>
+                    </div>
+                </div>              
                 
                 <!-- Clays Picklist - XML to Titan -->
                 <div class="col-md-4 col-lg-3">
